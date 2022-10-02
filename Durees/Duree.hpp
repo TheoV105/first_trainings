@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-bool operator==(Duree const& lhs, Duree const& rhs);
-
 class Duree
 {
     public:
@@ -17,4 +15,5 @@ class Duree
     int sec_;
 };
 
+bool operator==(Duree const& lhs, Duree const& rhs);
 #endif
