@@ -16,4 +16,5 @@ class Duree
 };
 
 bool operator==(Duree const& lhs, Duree const& rhs);
+
 #endif
