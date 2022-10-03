@@ -32,6 +32,8 @@ void Duree::afficher() const {
     cout << heures_ << "h" << min_ << "m" << sec_ << "s" << endl;
 }
 
-Duree operator+(Duree const& lhs, Duree const& rhs){
-
+Duree operator+(Duree const& a, Duree const& b) {
+    Duree copie(a);
+    copie += b;
+    return copie;
 }
