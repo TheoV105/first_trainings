@@ -15,7 +15,7 @@ bool operator==(Duree const& lhs, Duree const& rhs) {
 Duree& Duree::operator+=(const Duree &duree2){
     // ajoute les secondes -> passe tout en heures puis repartit le reste
     sec_ += duree2.sec_;
-    heures_ = min_/60;
+    min_ = sec_/60;
     sec_ %= 60;
 
     //ajoute les minutes

@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    Duree duree1(0, 10, 28), duree2(0, 10, 28);
+    Duree duree1(0, 10, 28), duree2(0, 15, 35);
 
     Duree resultat;
 
