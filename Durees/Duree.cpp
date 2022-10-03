@@ -28,12 +28,22 @@ Duree& Duree::operator+=(const Duree &duree2){
     return *this;
 }
 
-void Duree::afficher() const {
+/* void Duree::afficher() const {
     cout << heures_ << "h" << min_ << "m" << sec_ << "s" << endl;
+} */
+
+void Duree::afficher(ostream &flux) const {
+    flux << heures_ << "h" << min_ << "m" << sec_ << "s";
 }
 
 Duree operator+(Duree const& a, Duree const& b) {
     Duree copie(a);
     copie += b;
     return copie;
+}
+
+
+ostream& operator<<(ostream &flux, Duree const& duree) {
+    duree.afficher(flux) ;
+    return flux;
 }

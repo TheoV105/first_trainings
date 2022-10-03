@@ -7,16 +7,10 @@ int main()
 {
     Duree duree1(0, 10, 28), duree2(0, 15, 35);
 
-    Duree resultat;
-
-    duree1.afficher();
-    cout << " et " << endl;
-    duree2.afficher();
-
+    cout << duree1 << " et " << duree2 << endl;
+    
     duree1 += duree2;
 
-    cout << " donne " << endl;
-    duree1.afficher();
-
+    cout << " donne " << duree1 << endl;
     return 0;
 }
