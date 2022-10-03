@@ -8,6 +8,8 @@ class Duree
     public:
     Duree(int heures = 0, int min = 0, int sec = 0);
     bool estEgal(Duree const& b) const;
+    Duree& operator+=(Duree const& duree);
+    void afficher() const;
     
     private:
     int heures_;
@@ -16,5 +18,5 @@ class Duree
 };
 
 bool operator==(Duree const& lhs, Duree const& rhs);
-
+Duree operator+(Duree const& lhs, Duree const& rhs);
 #endif
