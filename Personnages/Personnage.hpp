@@ -6,6 +6,8 @@ class Personnage
     public:
     Personnage();
     Personnage(std::string nomArme, int degatsArme);
+        Personnage(Personnage const& personnageACopier); // personnage a 
+    ~Personnage();
 
     void recevoirDegats(int nbDegats);
     void attaquer(Personnage &cible);
@@ -17,5 +19,5 @@ class Personnage
     private:
     int vie_;
     int mana_;
-    Arme arme;
+    Arme *arme_;
 };
