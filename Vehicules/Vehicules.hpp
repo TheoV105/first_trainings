@@ -4,7 +4,8 @@
 class Vehicule {
     public:
     Vehicule(int prix);
-    void affiche() const;  //Affiche une description du Vehicule
+    virtual void affiche() const;  //Affiche une description du Vehicule
+    ~Vehicule();
 
     protected:
     int m_prix;  //Chaque véhicule a un prix
@@ -13,7 +14,8 @@ class Vehicule {
 class Voiture : public Vehicule {
     public:
     Voiture(int prix, int portes);
-    void affiche() const;
+    virtual void affiche() const;
+    ~Voiture();
 
     private:
     int m_portes;  //Le nombre de portes de la voiture
@@ -22,7 +24,8 @@ class Voiture : public Vehicule {
 class Moto : public Vehicule {
     public:
     Moto(int prix, float vitesse);
-    void affiche() const;
+    virtual void affiche() const;
+    ~Moto();
  
     private:
     float m_vitesse;  //La vitesse maximale de la moto

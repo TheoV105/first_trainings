@@ -5,7 +5,6 @@ using namespace std;
 
 //
 Personnage::Personnage() : vie_(100), nom_("Jack"){}
-Personnage::Personnage(string nom) : vie_(100), nom_(nom) {}
 
 void Personnage::recevoirDegats(int degats) {
     vie_ -= degats;
