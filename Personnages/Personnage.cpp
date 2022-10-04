@@ -18,7 +18,7 @@ Personnage::Personnage(Personnage const& personnageACopier)
 Personnage::~Personnage() {
     delete arme_;
 }
- 
+
 void Personnage::recevoirDegats(int nbDegats){
     vie_ -= nbDegats;
 
