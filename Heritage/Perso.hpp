@@ -7,6 +7,7 @@
 class Personnage {
     public:
     Personnage();
+    Personnage(string nom);
     void recevoirDegats(int degats);
     void coupDePoing(Personnage &cible) const;
 
@@ -25,6 +26,7 @@ class Guerrier : public Personnage {
 class Magicien : public Personnage {
     public:
     Magicien();
+    Magicien(string nom);
     void bouleDeFeu(Personnage& cible) const;
     void bouleDeGlace(Personnage& cible) const;
 
